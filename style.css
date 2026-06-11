@@ -966,30 +966,127 @@ footer { background: #050508; border-top: 1px solid var(--border); }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
   .tech-grid { grid-template-columns: repeat(4, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
+  /* Navbar */
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: block; }
+  .nav-inner { padding: 1rem 1.25rem; }
+
+  /* Sections */
+  .section, .dark-section, .alt-section { padding: 4rem 0; }
+  .container { padding: 0 1.25rem; }
+  .section-header { margin-bottom: 2.5rem; }
+  .section-title { font-size: 1.75rem; }
+  .section-desc { font-size: 0.92rem; }
+
+  /* Hero */
+  .hero-content { padding: 7rem 1.25rem 3rem; }
+  .hero-title { font-size: clamp(2.2rem, 10vw, 3.5rem); }
+  .hero-sub { font-size: 0.95rem; }
+  .hero-actions { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-ghost { width: 100%; text-align: center; }
+  .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+  .stat-num { font-size: 2rem; }
+
+  /* Work */
   .work-grid { grid-template-columns: 1fr; }
   .work-card.big { grid-column: 1; }
-  .work-card.big .work-card-inner { flex-direction: column; }
+  .work-card.big .work-card-inner { flex-direction: column; min-height: auto; }
   .work-card.big .work-info { width: 100%; }
-  .services-grid { grid-template-columns: 1fr; }
-  .products-grid { grid-template-columns: 1fr 1fr; }
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .pricing-grid { grid-template-columns: 1fr; }
-  .lab-features { grid-template-columns: 1fr; }
-  .tech-grid { grid-template-columns: repeat(3, 1fr); }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .work-card-inner { min-height: 260px; }
+  .work-canvas { width: 100% !important; height: 200px !important; }
+
+  /* Lab */
+  #lab { min-height: 80vh; height: 80vh; }
+  .lab-content { padding: 2rem 1.25rem; }
+  .lab-features { grid-template-columns: 1fr; gap: 1rem; }
+  .lab-feat { padding: 1.25rem; }
+
+  /* Services */
+  .services-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .service-card { padding: 1.75rem; }
+
+  /* Products */
+  .products-grid { grid-template-columns: 1fr; gap: 1rem; }
+
+  /* Process */
+  .process-step { gap: 1.25rem; padding: 1.5rem 0; }
+  .step-circle { width: 44px; height: 44px; font-size: 0.6rem; flex-shrink: 0; }
+  .process-line { left: 22px; }
+
+  /* Tech */
+  .tech-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .tech-item { padding: 1rem 0.75rem; font-size: 0.75rem; }
+
+  /* Testimonials */
+  .testimonials-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .testi-card { padding: 1.75rem; }
+  .logos-row { gap: 0.5rem; }
+  .logo-pill { font-size: 0.7rem; padding: 0.4rem 0.9rem; }
+
+  /* Pricing */
+  .pricing-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .pricing-card { padding: 2rem 1.5rem; }
+  .pricing-price { font-size: 2.25rem; }
+
+  /* FAQ */
+  .faq-q { font-size: 0.92rem; padding: 1.25rem 0; }
+
+  /* Contact */
   .form-row { grid-template-columns: 1fr; }
-  .hero-stats { gap: 2rem; }
+  .contact-form { gap: 1rem; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-top { padding: 3rem 0 2rem; }
+  .footer-bottom .container { flex-direction: column; gap: 0.75rem; text-align: center; }
+  .footer-legal { justify-content: center; }
 }
 
 @media (max-width: 480px) {
+  /* Hero */
+  .hero-title { font-size: 2rem; }
+  .hero-eyebrow { font-size: 0.62rem; }
+
+  /* Nav */
+  .logo-text { font-size: 1.1rem; }
+
+  /* Products */
   .products-grid { grid-template-columns: 1fr; }
+
+  /* Tech */
   .tech-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Footer */
   .footer-grid { grid-template-columns: 1fr; }
+  .footer-col { gap: 0.5rem; }
+
+  /* Pricing */
+  .pricing-card.featured { margin-top: 1rem; }
+
+  /* Buttons full width on tiny screens */
+  .btn-primary, .btn-outline, .btn-ghost { width: 100%; text-align: center; display: block; }
+  .product-footer .btn-buy { width: auto; }
+
+  /* Work info padding */
+  .work-info { padding: 1.25rem; }
+  .work-info h3 { font-size: 1.1rem; }
+
+  /* Marquee */
+  .marquee-track { font-size: 0.65rem; gap: 1.25rem; }
+
+  /* Section titles */
+  .section-title { font-size: 1.55rem; }
+
+  /* Stats */
+  .hero-stats { gap: 1.25rem; }
+  .stat-num { font-size: 1.75rem; }
 }
 
 /* ── Hard stop: nothing bleeds past the footer ── */
