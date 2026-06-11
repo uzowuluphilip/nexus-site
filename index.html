@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEXUS — Digital Experience Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <canvas id="logo-canvas" width="44" height="44"></canvas>
+        <span class="logo-text">NEXUS</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#lab">Lab</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Start a project →</a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#lab">Lab</a>
+      <a href="#products">Products</a>
+      <a href="#testimonials">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Digital Experience Studio · Est. 2019</div>
+      <h1 class="hero-title">
+        We build things<br/>
+        <span class="hero-accent">people remember.</span>
+      </h1>
+      <p class="hero-sub">Interactive design, motion, and engineering — crafted for brands that refuse to be ignored.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">See our work</a>
+        <a href="#lab" class="btn-ghost">Live demos ↓</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="240">0</span><span class="stat-label">Projects delivered</span></div>
+        <div class="stat"><span class="stat-num" data-target="98">0</span><span class="stat-label">% client satisfaction</span></div>
+        <div class="stat"><span class="stat-num" data-target="14">0</span><span class="stat-label">Countries served</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">scroll</div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>Particle Systems</span><span class="dot">·</span>
+      <span>Interactive Motion</span><span class="dot">·</span>
+      <span>3D Experiences</span><span class="dot">·</span>
+      <span>Creative Development</span><span class="dot">·</span>
+      <span>Brand Design</span><span class="dot">·</span>
+      <span>E-Commerce</span><span class="dot">·</span>
+      <span>WebGL</span><span class="dot">·</span>
+      <span>Three.js</span><span class="dot">·</span>
+      <span>GSAP Animation</span><span class="dot">·</span>
+      <span>Particle Systems</span><span class="dot">·</span>
+      <span>Interactive Motion</span><span class="dot">·</span>
+      <span>3D Experiences</span><span class="dot">·</span>
+      <span>Creative Development</span><span class="dot">·</span>
+      <span>Brand Design</span><span class="dot">·</span>
+      <span>E-Commerce</span><span class="dot">·</span>
+      <span>WebGL</span><span class="dot">·</span>
+      <span>Three.js</span><span class="dot">·</span>
+      <span>GSAP Animation</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ========== FEATURED WORK ========== -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Selected Work</div>
+        <h2 class="section-title">Projects that <em>move</em></h2>
+        <p class="section-desc">A curated selection of interactive digital experiences we've built for forward-thinking brands.</p>
+      </div>
+      <div class="work-grid">
+        <div class="work-card big reveal">
+          <div class="work-card-inner" style="background: linear-gradient(135deg,#0d0d1a,#1a0d2e);">
+            <canvas class="work-canvas" id="wc1" width="600" height="400"></canvas>
+            <div class="work-info">
+              <span class="work-tag">Particle System</span>
+              <h3>AuraFlow Brand Identity</h3>
+              <p>A living logo made of 12,000 particles that form the brand mark on hover.</p>
+              <a href="#" class="work-link">View case study →</a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card reveal">
+          <div class="work-card-inner" style="background: linear-gradient(135deg,#0a1a0a,#0d2e1a);">
+            <div class="work-placeholder green-glow">
+              <div class="pulse-ring"></div>
+              <span>Motion UI</span>
+            </div>
+            <div class="work-info">
+              <span class="work-tag">E-Commerce</span>
+              <h3>Verdant Shop</h3>
+              <p>Luxury plant brand with scroll-driven animations and 3D product viewer.</p>
+              <a href="#" class="work-link">View case study →</a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card reveal">
+          <div class="work-card-inner" style="background: linear-gradient(135deg,#1a0a0a,#2e0d0d);">
+            <div class="work-placeholder red-glow">
+              <div class="pulse-ring red"></div>
+              <span>Interactive</span>
+            </div>
+            <div class="work-info">
+              <span class="work-tag">WebGL</span>
+              <h3>Crimson Finance</h3>
+              <p>Real-time data visualisation dashboard with GPU-accelerated charts.</p>
+              <a href="#" class="work-link">View case study →</a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card reveal">
+          <div class="work-card-inner" style="background: linear-gradient(135deg,#0a0a1a,#0d1a2e);">
+            <div class="work-placeholder blue-glow">
+              <div class="pulse-ring blue"></div>
+              <span>3D Experience</span>
+            </div>
+            <div class="work-info">
+              <span class="work-tag">Three.js</span>
+              <h3>Orbit Space App</h3>
+              <p>Immersive solar system explorer with real NASA trajectory data.</p>
+              <a href="#" class="work-link">View case study →</a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card reveal">
+          <div class="work-card-inner" style="background: linear-gradient(135deg,#1a1a0a,#2e2a0d);">
+            <div class="work-placeholder gold-glow">
+              <div class="pulse-ring gold"></div>
+              <span>Brand</span>
+            </div>
+            <div class="work-info">
+              <span class="work-tag">Identity</span>
+              <h3>Luminos Jewels</h3>
+              <p>Luxury jewellery brand with shimmering particle hover effects.</p>
+              <a href="#" class="work-link">View case study →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LIVE LAB (Lizard Demo) ========== -->
+  <section id="lab" class="section dark-section">
+    <div class="lab-bg">
+      <canvas id="lizard-canvas"></canvas>
+    </div>
+    <div class="container lab-content">
+      <div class="eyebrow light">Interactive Lab</div>
+      <h2 class="section-title light">Move your cursor.<br/><span class="hero-accent">Watch it respond.</span></h2>
+      <p class="section-desc light">This is a live demo — every element you see is rendered in real-time using our proprietary motion engine. No videos. No GIFs. Pure code.</p>
+      <div class="lab-features">
+        <div class="lab-feat reveal-light">
+          <div class="feat-icon">⚡</div>
+          <h4>60fps Rendering</h4>
+          <p>GPU-accelerated canvas rendering at buttery-smooth framerates.</p>
+        </div>
+        <div class="lab-feat reveal-light">
+          <div class="feat-icon">🎯</div>
+          <h4>Cursor Awareness</h4>
+          <p>Every element reacts to your position with realistic physics.</p>
+        </div>
+        <div class="lab-feat reveal-light">
+          <div class="feat-icon">🧠</div>
+          <h4>Autonomous AI</h4>
+          <p>When idle, the system finds its own path using flocking algorithms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">What we do</div>
+        <h2 class="section-title">Every pixel, <em>purposeful</em></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-icon">✦</div>
+          <h3>Creative Development</h3>
+          <p>We translate brand ideas into living, breathing code. WebGL, Three.js, Canvas — we speak all the languages of the web's creative layer.</p>
+          <ul class="service-list">
+            <li>Particle & physics systems</li>
+            <li>Scroll-driven experiences</li>
+            <li>Interactive installations</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">02</div>
+          <div class="service-icon">◈</div>
+          <h3>Motion Design</h3>
+          <p>Animation is not decoration — it is the voice of your interface. We choreograph every transition to feel inevitable.</p>
+          <ul class="service-list">
+            <li>GSAP & Lottie animation</li>
+            <li>Micro-interactions</li>
+            <li>Video & reel production</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">03</div>
+          <div class="service-icon">⬡</div>
+          <h3>E-Commerce</h3>
+          <p>High-conversion storefronts that do not sacrifice beauty for performance. Built on Shopify, Next.js, or bespoke stacks.</p>
+          <ul class="service-list">
+            <li>Custom Shopify themes</li>
+            <li>3D product configurators</li>
+            <li>Checkout optimisation</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">04</div>
+          <div class="service-icon">◎</div>
+          <h3>Brand Identity</h3>
+          <p>Strategy-led design systems: logos, typefaces, colour, motion language — unified so every touchpoint tells the same story.</p>
+          <ul class="service-list">
+            <li>Logo & visual identity</li>
+            <li>Design systems</li>
+            <li>Brand guidelines</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">05</div>
+          <div class="service-icon">⟡</div>
+          <h3>App & Product Design</h3>
+          <p>From wireframe to launch — UX research, prototyping, and pixel-perfect UI for web and mobile products.</p>
+          <ul class="service-list">
+            <li>UX research & strategy</li>
+            <li>Figma prototyping</li>
+            <li>Usability testing</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">06</div>
+          <div class="service-icon">⬨</div>
+          <h3>Performance & SEO</h3>
+          <p>Beautiful sites that also rank and load fast. Core Web Vitals, semantic HTML, structured data — built in from day one.</p>
+          <ul class="service-list">
+            <li>Core Web Vitals optimisation</li>
+            <li>Technical SEO audits</li>
+            <li>Accessibility (WCAG AA)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS ========== -->
+  <section id="products" class="section alt-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Digital Products</div>
+        <h2 class="section-title">Ship faster with our <em>templates</em></h2>
+        <p class="section-desc">Production-ready animated website templates. Buy once, own forever.</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card reveal">
+          <div class="product-preview" id="pp1">
+            <canvas id="product-canvas-1" width="320" height="180"></canvas>
+          </div>
+          <div class="product-body">
+            <span class="product-badge">Bestseller</span>
+            <h3>Particle Hero Kit</h3>
+            <p>Full hero section with configurable particle system. 8 presets included.</p>
+            <div class="product-footer">
+              <span class="product-price">$49</span>
+              <a href="#" class="btn-buy">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-preview dark-preview">
+            <div class="preview-anim">
+              <div class="orbit-ring"></div>
+              <div class="orbit-ring r2"></div>
+              <div class="orbit-dot"></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <span class="product-badge new">New</span>
+            <h3>Orbit 3D Template</h3>
+            <p>Three.js powered 3D scene template. Drag to rotate, scroll to zoom.</p>
+            <div class="product-footer">
+              <span class="product-price">$79</span>
+              <a href="#" class="btn-buy">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-preview purple-preview">
+            <div class="preview-lines">
+              <div class="line-anim"></div>
+              <div class="line-anim l2"></div>
+              <div class="line-anim l3"></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <span class="product-badge">Popular</span>
+            <h3>Motion Dashboard UI</h3>
+            <p>Animated analytics dashboard. GSAP-powered charts and live counters.</p>
+            <div class="product-footer">
+              <span class="product-price">$99</span>
+              <a href="#" class="btn-buy">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-preview green-preview">
+            <div class="morph-shape"></div>
+          </div>
+          <div class="product-body">
+            <span class="product-badge bundle">Bundle</span>
+            <h3>Complete Studio Pack</h3>
+            <p>All templates + source files + 6-month update access. Best value.</p>
+            <div class="product-footer">
+              <span class="product-price">$199 <s style="color:#666;font-size:0.8em">$327</s></span>
+              <a href="#" class="btn-buy accent">Get bundle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section id="process" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">How we work</div>
+        <h2 class="section-title">From idea to <em>impact</em></h2>
+      </div>
+      <div class="process-track">
+        <div class="process-line"></div>
+        <div class="process-step reveal">
+          <div class="step-circle">01</div>
+          <div class="step-body">
+            <h4>Discovery</h4>
+            <p>We map your goals, audience, and competitive landscape in a focused 2-day sprint. No fluff — just clarity.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-circle">02</div>
+          <div class="step-body">
+            <h4>Design</h4>
+            <p>High-fidelity mockups and interactive prototypes in Figma. You see it before we build a single line of code.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-circle">03</div>
+          <div class="step-body">
+            <h4>Build</h4>
+            <p>Pixel-perfect development with weekly check-ins. Staging environment so you're never surprised on launch day.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-circle">04</div>
+          <div class="step-body">
+            <h4>Launch & Grow</h4>
+            <p>We handle deployment, performance audits, and stay on retainer to keep iterating after launch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECH STACK ========== -->
+  <section id="tech" class="section alt-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Technology</div>
+        <h2 class="section-title">Built with the <em>best tools</em></h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-item reveal">Three.js</div>
+        <div class="tech-item reveal">GSAP</div>
+        <div class="tech-item reveal">WebGL</div>
+        <div class="tech-item reveal">React</div>
+        <div class="tech-item reveal">Next.js</div>
+        <div class="tech-item reveal">Framer Motion</div>
+        <div class="tech-item reveal">Shopify</div>
+        <div class="tech-item reveal">Figma</div>
+        <div class="tech-item reveal">Canvas API</div>
+        <div class="tech-item reveal">Node.js</div>
+        <div class="tech-item reveal">Vercel</div>
+        <div class="tech-item reveal">Lottie</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section id="testimonials" class="section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow light">Client voices</div>
+        <h2 class="section-title light">They said it best</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card reveal-light">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">NEXUS didn't just build our website — they built our brand's entire digital personality. The particle animations on our homepage became our most-shared asset. Clients constantly ask who made it.</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#7c3aed,#db2777)">AC</div>
+            <div>
+              <strong>Amara Chen</strong>
+              <span>CMO, AuraFlow</span>
+            </div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+        <div class="testi-card reveal-light">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The 3D product viewer they built tripled our time-on-page and lifted conversions by 34% in the first month. ROI was insane. Booked them again before the first project was even done.</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#059669,#0891b2)">JM</div>
+            <div>
+              <strong>Jake Morrison</strong>
+              <span>Founder, Verdant</span>
+            </div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+        <div class="testi-card reveal-light">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Most agencies talk about creative work but deliver templates. NEXUS actually does something genuinely new every time. Our finance dashboard is unlike anything else in the industry.</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#dc2626,#ea580c)">SR</div>
+            <div>
+              <strong>Sofia Reyes</strong>
+              <span>CTO, Crimson Capital</span>
+            </div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="client-logos">
+        <div class="eyebrow light" style="margin-bottom:2rem">Trusted by</div>
+        <div class="logos-row">
+          <div class="logo-pill">AuraFlow</div>
+          <div class="logo-pill">Verdant</div>
+          <div class="logo-pill">Crimson Capital</div>
+          <div class="logo-pill">Orbit Labs</div>
+          <div class="logo-pill">Luminos</div>
+          <div class="logo-pill">Strata AI</div>
+          <div class="logo-pill">PulseMedia</div>
+          <div class="logo-pill">Zenith Co.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Pricing</div>
+        <h2 class="section-title">Transparent, <em>always</em></h2>
+        <p class="section-desc">No hidden fees. No surprise invoices. Pick a plan or request a custom quote.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-price">$2,500</div>
+          <div class="pricing-period">one-time</div>
+          <ul class="pricing-features">
+            <li>✓ 5-page website</li>
+            <li>✓ 1 particle animation</li>
+            <li>✓ Mobile responsive</li>
+            <li>✓ SEO setup</li>
+            <li>✓ 30-day support</li>
+            <li class="muted">✗ Custom animations</li>
+            <li class="muted">✗ E-commerce</li>
+          </ul>
+          <a href="#contact" class="btn-outline">Get started</a>
+        </div>
+        <div class="pricing-card featured reveal">
+          <div class="pricing-badge">Most popular</div>
+          <div class="pricing-tier">Studio</div>
+          <div class="pricing-price">$7,500</div>
+          <div class="pricing-period">one-time</div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited pages</li>
+            <li>✓ Full animation suite</li>
+            <li>✓ 3D / WebGL scenes</li>
+            <li>✓ E-commerce ready</li>
+            <li>✓ CMS integration</li>
+            <li>✓ 90-day support</li>
+            <li>✓ Performance audit</li>
+          </ul>
+          <a href="#contact" class="btn-primary">Get started</a>
+        </div>
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-price">Custom</div>
+          <div class="pricing-period">scoped project</div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Studio</li>
+            <li>✓ Dedicated team</li>
+            <li>✓ Custom tech stack</li>
+            <li>✓ SLA guarantees</li>
+            <li>✓ Ongoing retainer</li>
+            <li>✓ White-label option</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <a href="#contact" class="btn-outline">Talk to us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq" class="section alt-section">
+    <div class="container narrow">
+      <div class="section-header">
+        <div class="eyebrow">FAQ</div>
+        <h2 class="section-title">Questions, <em>answered</em></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+          <div class="faq-q">How long does a typical project take? <span class="faq-icon">+</span></div>
+          <div class="faq-a">Starter projects take 2–3 weeks. Studio-tier work runs 6–10 weeks depending on scope. We always agree on a timeline during discovery before any money changes hands.</div>
+        </div>
+        <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+          <div class="faq-q">Do you work with international clients? <span class="faq-icon">+</span></div>
+          <div class="faq-a">Absolutely. We've delivered projects across 14 countries. All collaboration happens asynchronously via Notion, Figma, and Loom — timezone differences have never slowed us down.</div>
+        </div>
+        <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+          <div class="faq-q">Can I update the site myself after launch? <span class="faq-icon">+</span></div>
+          <div class="faq-a">Yes. Every project includes a CMS integration (Sanity, Contentful, or Notion as a backend) so you can edit content without touching code. We also provide a handoff video walkthrough.</div>
+        </div>
+        <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+          <div class="faq-q">What makes your animations different from a template? <span class="faq-icon">+</span></div>
+          <div class="faq-a">Templates animate the same thing for every client. We write custom shaders and physics systems from scratch, tuned to your brand's personality — the speed, density, colour, and behaviour are all deliberate choices made for you.</div>
+        </div>
+        <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+          <div class="faq-q">Do the animations affect page load speed? <span class="faq-icon">+</span></div>
+          <div class="faq-a">No. We ship animations as lightweight JS modules with lazy loading and reduced-motion fallbacks. Our sites consistently score 90+ on Google PageSpeed even with heavy visual effects.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section dark-section">
+    <div class="container narrow">
+      <div class="section-header">
+        <div class="eyebrow light">Let's talk</div>
+        <h2 class="section-title light">Start something <span class="hero-accent">remarkable.</span></h2>
+        <p class="section-desc light">Drop us a message and we'll respond within 24 hours. No spam, no sales pitch — just a real conversation about your project.</p>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your name</label>
+            <input type="text" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" placeholder="jane@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Project type</label>
+          <select>
+            <option>Website / Landing page</option>
+            <option>E-commerce store</option>
+            <option>Interactive experience</option>
+            <option>Brand identity</option>
+            <option>Motion design</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Tell us about your project</label>
+          <textarea rows="5" placeholder="What are you building? What's the goal? Any references or inspirations?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary full">Send message →</button>
+        <div id="form-success" class="form-success" style="display:none">✓ Message sent! We'll be in touch within 24 hours.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <canvas id="footer-logo" width="36" height="36"></canvas>
+              <span class="logo-text">NEXUS</span>
+            </div>
+            <p class="footer-tagline">We build digital things people remember.</p>
+            <div class="footer-social">
+              <a href="#">Tw</a>
+              <a href="#">In</a>
+              <a href="#">Dr</a>
+              <a href="#">Gh</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <a href="#">Creative Development</a>
+            <a href="#">Motion Design</a>
+            <a href="#">E-Commerce</a>
+            <a href="#">Brand Identity</a>
+            <a href="#">App Design</a>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <a href="#">About us</a>
+            <a href="#">Our process</a>
+            <a href="#">Careers</a>
+            <a href="#">Press kit</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="footer-col">
+            <h5>Resources</h5>
+            <a href="#">Templates</a>
+            <a href="#">Documentation</a>
+            <a href="#">Open source</a>
+            <a href="#">Newsletter</a>
+            <a href="#">Status</a>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <a href="#">hello@nexus.studio</a>
+            <a href="#">+1 (555) 000-0000</a>
+            <a href="#">Schedule a call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 NEXUS Studio. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
