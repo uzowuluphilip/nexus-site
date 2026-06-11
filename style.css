@@ -1005,16 +1005,16 @@ footer { background: #050508; border-top: 1px solid var(--border); }
   #lab { 
     height: auto !important; 
     min-height: auto !important; 
-    padding: 4rem 0 5rem;
+    padding: 4rem 0 8rem;
   }
   .lab-bg { 
-    position: fixed;
+    position: absolute;
     top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 0;
     pointer-events: none;
-    opacity: 0;
+    opacity: 1;
   }
   #lizard-canvas { 
     position: absolute;
@@ -1022,7 +1022,8 @@ footer { background: #050508; border-top: 1px solid var(--border); }
     width: 100% !important;
     height: 100% !important;
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.35;
+    pointer-events: none;
   }
   .lab-content { 
     position: relative; 
