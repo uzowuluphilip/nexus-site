@@ -1002,10 +1002,18 @@ footer { background: #050508; border-top: 1px solid var(--border); }
   .work-canvas { width: 100% !important; height: 200px !important; }
 
   /* Lab */
-  #lab { min-height: 80vh; height: 80vh; }
-  .lab-content { padding: 2rem 1.25rem; }
+  #lab { min-height: auto; height: auto; padding: 4rem 0; }
+  .lab-bg { position: absolute; inset: 0; height: 100%; }
+  #lizard-canvas { opacity: 0.4; }
+  .lab-content { position: relative; z-index: 2; }
   .lab-features { grid-template-columns: 1fr; gap: 1rem; }
-  .lab-feat { padding: 1.25rem; }
+  .lab-feat { 
+    padding: 1.25rem; 
+    background: rgba(15,15,26,0.85);
+    backdrop-filter: blur(12px);
+    position: relative;
+    z-index: 3;
+  }
 
   /* Services */
   .services-grid { grid-template-columns: 1fr; gap: 1rem; }
